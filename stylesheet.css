@@ -1,0 +1,175 @@
+/* 共通部分 */
+html,body{
+  font-family: 'Courier', serif;
+  font-size: 62.5%;
+  padding:0;
+  margin:0;
+  height:100%;
+}
+
+a{
+  text-decoration: none;
+  color:black;
+}
+
+.clear{
+  clear:both;
+}
+
+h1, p{
+  margin:0;
+}
+
+#background{
+  width: 100%;
+  height:100%;
+  padding:0;
+  margin:0;
+}
+
+#wrapper{
+  font-size: 1.8rem;
+  background-color: white;
+  width: 70%;
+  height:100%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+/* ヘッダ */
+#wrapper header h1{
+  font-weight: 300;
+  float: left;
+  width: 50%;
+  margin-top:0;
+  padding-top:5px;
+}
+
+#header-right{
+  float: right;
+  width: 50%;
+  margin-top:0;
+}
+
+#wrapper header p{
+  font-weight: 300;
+  float: right;
+  margin-top:0;
+  padding-top:10px;
+  padding-right: 3%;
+}
+
+#wrapper header i{
+  float: right;
+  margin-top:0;
+  padding-top:15px;
+  padding-right: 3%;
+}
+
+/* メイン */
+main{
+  border-top: 1px solid black;
+}
+
+#main-wrapper{
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+#sub-title{
+  font-size: 2.0rem;
+}
+
+/* 入力部 */
+#input-wrapper{
+  background-color: rgb(210, 210, 210);
+  box-shadow: 5px 5px 8px gray;
+  width: 100%;
+  margin:0 auto;
+  margin-top: 20px;
+}
+
+#input-contents-wrapper{
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#input-contents{
+  width: 100%;
+  margin-top:20px;
+}
+
+.media-under-500, .media-under-350{
+  display: none;
+}
+
+#input-contents input{
+  width: 100%;
+  font-size: 1.8rem;
+}
+
+#input-contents input:focus{
+  border: 2px solid rgb(0, 140, 255); 
+  z-index: 10;
+  outline: 0;
+}
+
+/* 使い方 */
+#how-to-use{
+  margin-top:20px;
+}
+
+.how-to-use-contents{
+  margin-top: 10px;
+}
+
+.url{
+  font-size:1.6rem;
+}
+
+/* レスポンシブ */
+@media screen and (min-width: 1200px) {/* 1200px以上*/
+  #wrapper{
+    font-size: 2.0rem;
+  }
+}
+
+@media screen and (max-width: 800px) {/* 800px以下*/
+  #wrapper{
+    font-size: 1.6rem;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {/* 500px以下*/
+  #header-right{
+    display: none;
+  }
+
+  .media-under-500{
+    display: block;
+  }
+
+  .url{
+    font-size:1.2rem;
+  }
+}
+
+@media screen and (max-width: 350px) {/* 350px以下*/
+  #wrapper header h1{
+    font-size:2.4rem;
+  }
+
+  .media-under-350{
+    display: block;
+  }
+
+  .url{
+    font-size:1.0rem;
+  }
+}

@@ -18,7 +18,7 @@ $(function() {
 
     request.onload = function () {    // レスポンスが返ってきた時の処理
       data = this.response;
-      if(data != null){    // 変換失敗でnullが返ってくるので、条件分岐
+      if(data !== null){    // 変換失敗でnullが返ってくるので、条件分岐
         result1 = data.number
       }else{    // 変換失敗時は空の文字列を表示
         result1 = '';
@@ -38,7 +38,7 @@ $(function() {
 
       request.onload = function () {    // レスポンスが返ってきた時の処理を記述 
         data = this.response;
-        if(data != null){    // 変換失敗でnullが返ってくるので、条件分岐
+        if(data !== null){    // 変換失敗でnullが返ってくるので、条件分岐
           result2 = data.kanji
         }else{    // 変換失敗時は空の文字列を表示
           result2 = '';
